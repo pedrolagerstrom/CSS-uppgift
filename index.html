@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b7e4976357.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
@@ -18,25 +22,33 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Playfair+Display:ital@0;1&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
+      <div class="nav-bars">
+        <img src="images/bars-solid.svg" alt="" />
+      </div>
       <nav class="header-nav">
-        <a href="index.html">HOME</a>
-        <a href="menu.html">MENU</a>
-        <a href="">ABOUT US</a>
-        <img class="header-logo" src="images/logo.png" alt="" />
-        <a href="">RESERVATION</a>
-        <a href="">OUR BLOG</a>
+        <div class="nav-left">
+          <a href="index.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="aboutus.html">ABOUT US</a>
+        </div>
+        <div class="header-logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div class="nav-right">
+          <a href="reservation.html">RESERVATION</a>
+          <a href="ourblog.html">OUR BLOG</a>
+          <img src="images/search-solid.svg" alt="" width="10px" />
+        </div>
       </nav>
+      <div class="nav-search">
+        <img src="images/search-solid.svg" alt="" />
+      </div>
     </header>
     <main>
       <section class="banner-container">
@@ -69,12 +81,166 @@
       </section>
       <section class="img-container">
         <img src="images/4-683x1024.jpg" alt="" />
-        <div class="img-text">
-          <img id="img-with-text" src="images/Untitled-1.jpg" alt="" />
-          <h2>The Art Of<br />Cooking</h2>
-        </div>
+        <img id="img-with-text" src="images/Untitled-1.jpg" alt="" />
+        <h2>The Art Of<br />Cooking</h2>
         <img src="images/5-683x1024.jpg" alt="" />
       </section>
+      <section class="menu-container">
+        <h2 class="our-menu-h2">Our Menu</h2>
+        <p class="menu-text-par">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore,
+          expedita? Facere dolores veniam rem dolorum.
+        </p>
+        <div class="menu-box">
+          <div class="menu-daily">
+            <h2>Daily Menu</h2>
+            <ul class="menu-list-style">
+              <li>
+                <span class="menu-items"
+                  >Chicken & Flowers ............... </span
+                >$45
+              </li>
+              <li>
+                <span class="menu-items"
+                  >Beef & Herbs .......................... </span
+                >$45
+              </li>
+              <li>
+                <span class="menu-items"
+                  >Seafood Plate ......................... </span
+                >$45
+              </li>
+              <li>
+                <span class="menu-items"
+                  >Vegetarian Plate .................... </span
+                >$45
+              </li>
+              <li>
+                <span class="menu-items"
+                  >Chicken & Flowers ............... </span
+                >$45
+              </li>
+            </ul>
+          </div>
+          <div class="menu-seasonal">
+            <h2>Seasonal Menu</h2>
+            <ul class="menu-list-style">
+              <li>
+                <span class="menu-items"
+                  >Chicken & Flowers ............... </span
+                >$45
+              </li>
+              <li>
+                <span class="menu-items"
+                  >Beef & Herbs .......................... </span
+                >$45
+              </li>
+              <li>
+                <span class="menu-items"
+                  >Seafood Plate ......................... </span
+                >$45
+              </li>
+              <li>
+                <span class="menu-items"
+                  >Vegetarian Plate .................... </span
+                >$45
+              </li>
+              <li>
+                <span class="menu-items"
+                  >Chicken & Flowers ............... </span
+                >$45
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="taste-container">
+        <img class="taste-img" src="images/7.jpg" alt="" width="480" />
+        <div class="taste-text">
+          <h2>The Taste Of Cuisine</h2>
+          <p class="taste-text-par">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            adipisci quod reprehenderit, veritatis dolor eveniet sit, hic totam,
+            quam incidunt animi impedit ex non excepturi fugiat iste maxime
+            veniam ad?
+          </p>
+          <a href="reservation.html" class="button"><p>BOOK A TABLE</p></a>
+        </div>
+      </section>
+      <section class="customer-container">
+        <h2>What Customers Say</h2>
+        <div><img class="symbol" src="images/symbol.jpg" alt="" /></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+          voluptatem perspiciatis consectetur quia sint odit nam distinctio,
+          voluptate, nesciunt enim incidunt.
+        </p>
+        <div><img class="stars" src="images/stars.jpg" alt="" /></div>
+        <img class="customer-img" src="images/a3.jpg" alt="" />
+        <h3>JANE FROSS</h3>
+      </section>
+      <section class="img-mobile">
+        <img src="images/11-1170x780.jpg" alt="" />
+        <img src="images/10-1170x785.jpg" alt="" />
+        <img src="images/9-1170x658.jpg" alt="" />
+        <img src="images/8-1170x781.jpg" alt="" />
+      </section>
+      <section class="map-container">
+        <div>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.92701327169!2d20.265017715828236!3d67.51528393283104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d73647207a082d%3A0xea387c34336d6a2a!2sKillinge!5e0!3m2!1ssv!2sse!4v1613575504976!5m2!1ssv!2sse"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+        <div class="opening-text">
+          <h2>Opening Hours</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magnam
+            cupiditate quisquam quas.
+          </p>
+          <ul class="ul">
+            <li>
+              <i class="fas fa-clock"></i><span> Monday</span> ..............
+              8:00 AM - 9:00 PM
+            </li>
+            <li>
+              <i class="fas fa-clock"></i><span> Tuesday</span> ..............
+              8:00 AM - 9:00 PM
+            </li>
+            <li>
+              <i class="fas fa-clock"></i><span> Wednesday</span> ........ 8:00
+              AM - 9:00 PM
+            </li>
+            <li>
+              <i class="fas fa-clock"></i><span> Thursday</span> ............
+              8:00 AM - 9:00 PM
+            </li>
+            <li>
+              <i class="fas fa-clock"></i
+              ><span> Friday</span> .................. 8:00 AM - 9:00 PM
+            </li>
+            <li>
+              <i class="fas fa-clock"></i><span> Sat-Sunday</span> ........ 8:00
+              AM - 9:00 PM
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-links">
+          <i class="fab fa-facebook-f"><span>FACEBOOK</span></i>
+          <i class="fab fa-twitter"><span>TWITTER</span></i>
+          <i class="fab fa-instagram"><span>INSTAGRAM</span></i>
+          <i class="fab fa-pinterest"><span>PINTEREST</span></i>
+          <i class="fab fa-youtube"><span>YOUTUBE</span></i>
+          <i class="far fa-heart"><span>BLOGLOVIN</span></i>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
