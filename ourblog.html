@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_ourblog.css" />
+    <title>Our Blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b7e4976357.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <header>
+        <div class="hidden-bars">
+          <i onclick="openNav()" class="fas fa-bars nav-bars"></i>
+        </div>
+        <nav class="header-nav">
+          <div class="nav-left">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="aboutus.html">ABOUT US</a>
+          </div>
+          <div class="header-logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="nav-right">
+            <a href="reservation.html">RESERVATION</a>
+            <a class="link-active" href="ourblog.html">OUR BLOG</a>
+            <i class="fas fa-search"></i>
+          </div>
+        </nav>
+        <div class="nav-search">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="sidenav" id="mySidenav">
+          <img class="logo-side" src="images/logo.png" alt="" width="220" />
+          <hr class="logo-line" />
+          <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="far fa-heart"></i>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <hr />
+            <li><a href="menu.html">MENU</a></li>
+            <hr />
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <hr />
+            <li><a href="reservation.html">RESERVATION</a></li>
+            <hr />
+            <li><a class="link-active" href="ourblog.html">OUR BLOG</a></li>
+          </ul>
+          <div>
+            <i onclick="closeNav()" class="fas fa-times-circle close-btn"></i>
+          </div>
+        </div>
+      </header>
+    <main>
+        <div class="arrow">
+            <i onclick="topFunction()" class="fas fa-angle-up" id="up"></i>
+          </div>
+        <h1 class="head">Our Blog</h1>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <!-- <img class="card-img" src="resources/1-2.jpg" srcset="resources/1-2.jpg 1920w, resources/1-2-150x150.jpg 150w, resources/1-2-585x585.jpg 585w" sizes="(max-width: 500px)500px, 100vw" alt="Mat"> -->
+                    <picture>
+                        <source
+                            media="(min-width: 1201px)"
+                            srcset="images/1-2.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 251px)"
+                            srcset="images/1-2-585x585.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(max-width: 250px)"
+                            srcset="images/1-2-150x150.jpg"
+                            class="food-img" 
+                        />
+                        <img class="food-img" src="images/1-2.jpg">
+                    </picture>
+                    <div class="container">
+                        <p class="card-foodtype">Chicken</p>
+                        <h4 class="card-title">How To Make The Best Chicken Taco Soup</h5>
+                        <p class="card-date">October 14, 2019</p>
+                    </div>
+                </div>           
+            </div>
+            <div class="column">
+                <div class="card">
+                    <!-- <img class="card-img" src="images/2.jpg" srcset="images/2.jpg 1920w, images/2-150x150.jpg 150w, images/2-585x585.jpg 585w, images/2-1170x780.jpg 1170w" sizes="(max-width: 500px)500px, 100vw" alt="Mat"> -->
+                    <picture class="food-img" >
+                        <source
+                            media="(min-width: 1400px)"
+                            srcset="images/2.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 750px)"
+                            srcset="images/2-1170x780.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 251px)"
+                            srcset="images/2-585x585.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(max-width: 250px)"
+                            srcset="images/2-150x150.jpg"
+                            class="food-img" 
+                        />
+                        <img class="food-img" src="images/2.jpg">
+                    </picture>
+                    <div class="container">
+                        <p class="card-foodtype">Beef</p>
+                        <h5 class="card-title">BBQ Steak Skewers With Herbs Simple Recipe</h5>
+                        <p class="card-date">October 14, 2019</p>
+                    </div>
+                </div>           
+            </div>
+            <div class="column">
+                <div class="card">
+                    <!-- <img class="card-img" src="images/3-1.jpg" srcset="images/3-1.jpg 1920w, images/3-1-150x150.jpg 150w, images/3-1-585x585.jpg 585w, images/3-1-1170x780.jpg 1170w" sizes="(max-width: 500px)500px, 100vw" alt="Mat"> -->
+                    <picture>
+                        <source
+                            media="(min-width: 1400px)"
+                            srcset="images/3-1.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 750px)"
+                            srcset="images/3-1-1170x780.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 251px)"
+                            srcset="images/3-1-585x585.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(max-width: 250px)"
+                            srcset="images/3-1-150x150.jpg"
+                            class="food-img" 
+                        />
+                        <img class="food-img" src="images/3-1.jpg">
+                    </picture>
+                    <div class="container">
+                        <p class="card-foodtype">Seafood</p>
+                        <h5 class="card-title">BBQ Shrimp And Scallops with Pasta Recipe</h5>
+                        <p class="card-date">October 14, 2019</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <!-- <img class="card-img" src="images/6-1.jpg" srcset="images/6-1.jpg 1920w, images/6-1-150x150.jpg 150w, images/6-1-585x585.jpg 585w, images/6-1-1170x781.jpg 1170w" sizes="(max-width: 500px)500px, 100vw" alt="Mat"> -->
+                    <picture>
+                        <source
+                            media="(min-width: 1400px)"
+                            srcset="images/6-1.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 750px)"
+                            srcset="images/6-1-1170x780.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 251px)"
+                            srcset="images/6-1-585x585.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(max-width: 250px)"
+                            srcset="images/6-1-150x150.jpg"
+                            class="food-img" 
+                        />
+                        <img class="food-img" src="images/6-1.jpg">
+                    </picture>
+                    <div class="container">
+                        <p class="card-foodtype">Chicken</p>
+                        <h4 class="card-title">Cast Iron Whole Chicken Oven Roasted Recipe</h5>
+                        <p class="card-date">October 14, 2019</p>
+                    </div>
+                </div>           
+            </div>
+            <div class="column">
+                <div class="card">
+                    <!-- <img class="card-img" src="images/7-1.jpg" srcset="images/7-1.jpg 1920w, images/7-1-150x150.jpg 150w, images/7-1-585x585.jpg 585w, images/7-1-1170x783.jpg 1170w" sizes="(max-width: 500px)500px, 100vw" alt="Mat"> -->
+                    <picture>
+                        <source
+                            media="(min-width: 1400px)"
+                            srcset="images/7-1.jpg"
+                            class="food-img"   
+                        />
+                        <source
+                            media="(min-width: 750px)"
+                            srcset="images/7-1-1170x780.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 251px)"
+                            srcset="images/7-1-585x585.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(max-width: 250px)"
+                            srcset="images/7-1-150x150.jpg"
+                            class="food-img" 
+                        />
+                        <img class="food-img" src="images/7-1.jpg">
+                    </picture>
+                    <div class="container">
+                        <p class="card-foodtype">Beef</p>
+                        <h5 class="card-title">How To Make Roast Beef Feast For Whole Family</h5>
+                        <p class="card-date">October 14, 2019</p>
+                    </div>
+                </div>           
+            </div>
+            <div class="column">
+                <div class="card">
+                    <!-- <img class="card-img" src="images/8-1.jpg" srcset="images/8-1.jpg 1920w, images/8-1-150x150.jpg 150w, images/8-1-585x585.jpg 585w, images/8-1-1170x780.jpg 1170w" sizes="(max-width: 500px)500px, 100vw" alt="Mat"> -->
+                    <picture>
+                        <source
+                            media="(min-width: 1400px)"
+                            srcset="images/8-1.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 750px)"
+                            srcset="images/8-1-1170x780.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 251px)"
+                            srcset="images/8-1-585x585.jpg"
+                            class="food-img"                              
+                        />
+                        <source
+                            media="(max-width: 250px)"
+                            srcset="images/8-1-150x150.jpg"
+                            class="food-img" 
+                        />
+                        <img class="food-img" src="images/8-1.jpg">
+                    </picture>
+                    <div class="container">
+                        <p class="card-foodtype">Seafood</p>
+                        <h5 class="card-title">How To Make Christmas Dinner With Seafood</h5>
+                        <p class="card-date">October 14, 2019</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <!-- <img class="card-img" src="images/11-1.jpg" srcset="images/11-1.jpg 1920w, images/11-1-150x150.jpg 150w, images/11-1-585x585.jpg 585w, images/11-1-1170x781.jpg 1170w" sizes="(max-width: 500px)500px, 100vw" alt="Mat"> -->
+                    <picture>
+                        <source
+                            media="(min-width: 1400px)"
+                            srcset="images/11-1.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 750px)"
+                            srcset="images/11-1-1170x780.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 251px)"
+                            srcset="images/11-1-585x585.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(max-width: 250px)"
+                            srcset="images/11-1-150x150.jpg"
+                            class="food-img" 
+                        />
+                        <img class="food-img" src="images/11-1.jpg">
+                    </picture>
+                    <div class="container">
+                        <p class="card-foodtype">Chicken</p>
+                        <h4 class="card-title">Roast Chicken Thighs With Rosemary Recipe</h5>
+                        <p class="card-date">October 14, 2019</p>
+                    </div>
+                </div>           
+            </div>
+            <div class="column">
+                <div class="card">
+                    <!-- <img class="card-img" src="images/12-1.jpg" srcset="images/12-1.jpg 1920w, images/12-1-150x150.jpg 150w, images/12-1-585x585.jpg 585w, images/12-1-1170x872.jpg 1170w" sizes="(max-width: 500px)500px, 100vw" alt="Mat"> -->
+                    <picture>
+                        <source
+                            media="(min-width: 1400px)"
+                            srcset="images/12-1.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 750px)"
+                            srcset="images/12-1-1170x780.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 251px)"
+                            srcset="images/12-1-585x585.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(max-width: 250px)"
+                            srcset="images/12-1-150x150.jpg"
+                            class="food-img" 
+                        />
+                        <img class="food-img" src="images/12-1.jpg">
+                    </picture>
+                    <div class="container">
+                        <p class="card-foodtype">Beef</p>
+                        <h5 class="card-title">Beef and Broccoli With Udon Noodle Stir Fry</h5>
+                        <p class="card-date">October 14, 2019</p>
+                    </div>
+                </div>           
+            </div>
+            <div class="column">
+                <div class="card">
+                    <!-- <img class="card-img" src="images/13-1.jpg" srcset="images/13-1.jpg 1920w, images/13-1-150x150.jpg 150w, images/13-1-585x585.jpg 585w, images/13-1-1170x788.jpg 1170w" sizes="(max-width: 500px)500px, 100vw" alt="Mat"> -->
+                    <picture>
+                        <source
+                            media="(min-width: 1400px)"
+                            srcset="images/13-1.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 750px)"
+                            srcset="images/13-1-1170x780.jpg"
+                            class="food-img" 
+                        />
+                        <source
+                            media="(min-width: 251px)"
+                            srcset="images/13-1-585x585.jpg"
+                            class="food-img"     
+                        />
+                        <source
+                            media="(max-width: 250px)"
+                            srcset="images/13-1-150x150.jpg"
+                            class="food-img" 
+                        />
+                        <img class="food-img" src="images/13-1.jpg">
+                    </picture>
+                    <div class="container">
+                        <p class="card-foodtype">Seafood</p>
+                        <h5 class="card-title">Baked Shrimp Cheese Toast 15 Minutes Recipe</h5>
+                        <p class="card-date">October 14, 2019</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <section>
+            <div class="foot-image">
+                <div class="follow-text">
+                    <h2>Get In Touch</h2>
+                      <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                        sed quia consenquuntur 
+                        magni dolores eos.
+                      </p>
+                        <div><a href="#" class="follow-button">FOLLOW US <i class="fas fa-long-arrow-alt-right"></i> </a></div>
+                </div>
+            </div>
+          </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+          <i class="fab fa-facebook-f"><span>FACEBOOK</span></i>
+          <i class="fab fa-twitter"><span>TWITTER</span></i>
+          <i class="fab fa-instagram"><span>INSTAGRAM</span></i>
+          <i class="fab fa-pinterest"><span>PINTEREST</span></i>
+          <i class="fab fa-youtube"><span>YOUTUBE</span></i>
+          <i class="far fa-heart"><span>BLOGLOVIN</span></i>
+        </div>
+      </footer>
+</body>
+</html>

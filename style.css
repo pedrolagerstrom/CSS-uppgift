@@ -401,7 +401,9 @@ img {
 }
 
 .symbol {
-  margin: 0px;
+  color: #ff7143;
+  font-size: 25px;
+  margin: 15px;
 }
 
 .customer-container p {
@@ -414,7 +416,10 @@ img {
 }
 
 .stars {
-  margin: 20px;
+  color: yellow;
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .customer-img {
@@ -523,7 +528,7 @@ footer {
     width: 100%;
   }
 
-  .header-logo {
+  .header-logo img {
     width: 160px;
     margin: 0px 250px;
   }

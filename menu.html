@@ -1,96 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/d3b395d61f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300&family=Parisienne&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_menu.css">
     <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/b7e4976357.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Playfair+Display:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <div class="hidden-bars">
-        <i onclick="openNav()" class="fas fa-bars nav-bars"></i>
-      </div>
-      <nav class="header-nav">
-        <div class="nav-left">
-          <a href="index.html">HOME</a>
-          <a class="link-active" href="menu.html">MENU</a>
-          <a href="aboutus.html">ABOUT US</a>
+        <div class="hidden-bars">
+          <i onclick="openNav()" class="fas fa-bars nav-bars"></i>
         </div>
-        <div class="header-logo">
-          <img src="images/logo.png" alt="" />
-        </div>
-        <div class="nav-right">
-          <a href="reservation.html">RESERVATION</a>
-          <a href="ourblog.html">OUR BLOG</a>
+        <nav class="header-nav">
+          <div class="nav-left">
+            <a href="index.html">HOME</a>
+            <a class="link-active" href="menu.html">MENU</a>
+            <a href="aboutus.html">ABOUT US</a>
+          </div>
+          <div class="header-logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="nav-right">
+            <a href="reservation.html">RESERVATION</a>
+            <a href="ourblog.html">OUR BLOG</a>
+            <i class="fas fa-search"></i>
+          </div>
+        </nav>
+        <div class="nav-search">
           <i class="fas fa-search"></i>
         </div>
-      </nav>
-      <div class="nav-search">
-        <i class="fas fa-search"></i>
-      </div>
-      <div class="sidenav" id="mySidenav">
-        <img class="logo-side" src="images/logo.png" alt="" width="220" />
-        <hr class="logo-line" />
-        <div class="social">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-pinterest"></i>
-          <i class="fab fa-youtube"></i>
-          <i class="far fa-heart"></i>
+        <div class="sidenav" id="mySidenav">
+          <img class="logo-side" src="images/logo.png" alt="" width="220" />
+          <hr class="logo-line" />
+          <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="far fa-heart"></i>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <hr />
+            <li><a class="link-active" href="menu.html">MENU</a></li>
+            <hr />
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <hr />
+            <li><a href="reservation.html">RESERVATION</a></li>
+            <hr />
+            <li><a href="ourblog.html">OUR BLOG</a></li>
+          </ul>
+          <div>
+            <i onclick="closeNav()" class="fas fa-times-circle close-btn"></i>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="index.html">HOME</a></li>
-          <hr />
-          <li><a class="link-active" href="menu.html">MENU</a></li>
-          <hr />
-          <li><a href="aboutus.html">ABOUT US</a></li>
-          <hr />
-          <li><a href="reservation.html">RESERVATION</a></li>
-          <hr />
-          <li><a href="ourblog.html">OUR BLOG</a></li>
-        </ul>
-        <div>
-          <i onclick="closeNav()" class="fas fa-times-circle close-btn"></i>
-        </div>
-      </div>
-    </header>
+      </header>
+  
     <main>
-      <div class="arrow">
-        <i onclick="topFunction()" class="fas fa-angle-up" id="up"></i>
-      </div>
-    </main>
+        <div class="arrow">
+            <i onclick="topFunction()" class="fas fa-angle-up" id="up"></i>
+          </div>
+        <section class="Sections_centered1">
+            <div class="our_menu">
+            <h2 class="Headings_1">Our Menu</h1>
+        </div>
+    </section>
+    <section class="whitespace">
+        <div >
+
+        </div>
+    </section>
+
+    <div id="parent">
+    <div class="four-section">
+
+    <div class="test">
+        <section class="Sections_centered menu">
+            <h2 class="Headings_2">Daily Menu</h1>
+            <ul>
+                <li><i class="fas fa-drumstick-bite orange"></i> Chicken & Flowers................ <i class="orange">$45</i></li>
+                <li><i class="fas fa-hamburger orange" ></i> Hamburger with Herbs........ <i class="orange">$45</i></li>
+                <li><i class="fas fa-fish orange"></i> Seafood Platter...................... <i class="orange">$45</i></li>
+                <li><i class="fas fa-leaf orange"></i> Vegetarian Platter................. <i class="orange">$45</i></li>
+            </ul>
+    </section>
+
+        <section class="Sections_centered">
+            <div>
+            <img src="images/13-1024x1024.jpg" alt="" width="1024">
+        </div>
+        
+        </section>
+    </div>
+
+    <div>
+        <div class="test">
+        <section class="Sections_centered">
+            <div>
+            <img src="images/14-1024x1024.jpg" alt="" width="1024">
+        </div>
+    </section>
+        <section class="Sections_centered menu">
+            <div>
+            <h2 class="Headings-2">Seasonal Menu</h1>
+                <ul>
+                    <li><i class="fas fa-drumstick-bite orange"></i> Chicken & Flowers................ <i class="orange">$45</i></li>
+                    <li><i class="fas fa-hamburger orange"></i> Hamburger with Herbs........ <i class="orange">$45</i></li>
+                    <li><i class="fas fa-fish orange"></i> Seafood Platter...................... <i class="orange">$45</i></li>
+                    <li><i class="fas fa-leaf orange"></i> Vegetarian Platter................. <i class="orange">$45</i></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+    </div>
+
+        <div class="random">
+        <section class="Sections_centered1 fixing">
+                <div class="absolute position-fix ">
+            <h2 class="Headings_2">Exquisite Taste</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae av illo inven tore veritatis et 
+                quasi architecto beatae vitae.
+            </p>
+            <a href="reservation.html"><button>BOOK A TABLE</button></a>
+        </div>
+            <div class="">
+            <img src="images/15.jpg" height="400px">
+        </div>
+    </section>    
+</div>
+</div>
+
+    
+    <div class="fix">
+        <section class="Sections_centered   "> 
+            <div class="Icon_and_text">
+                <i class="fas fa-asterisk fa-3x orange"></i>
+            <h3>Taste Like No Other</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore excepturi ullam beatae laborum accusantium maxime amet sequi magnam! Sapiente quis magni similique quae animi voluptates voluptatem asperiores, dolores recusandae suscipit!.
+            </p>
+        </div>
+        </section>
+        <section class="Sections_centered">
+        <div class="Icon_and_text">
+            <i class="fas fa-barcode fa-3x orange"></i>
+            <h3>Organic Ingredients</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed fuga eaque nam, vitae non maiores. Voluptatibus cumque quo temporibus beatae obcaecati. Voluptatum animi a amet adipisci odit explicabo quam consequuntur.
+            </p>
+        </div>
+        </section>
+        <section class="Sections_centered">
+        <div class="Icon_and_text">
+            <i class="fas fa-star fa-3x orange"></i>
+            <h3>Special Food Journey</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illum, vel obcaecati temporibus provident, atque perspiciatis sit quam optio excepturi velit quas adipisci possimus ducimus iusto non quisquam eos officia.
+            </p>
+        </div>
+    </section>
+</div>
+
+    
+    <section>
+       
+        <div class="foot-image">
+            <div class="follow-text">
+                <h2>Get In Touch</h2>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                    sed quia consenquuntur 
+                    magni dolores eos.
+                  </p>
+                    <div><a href="#" class="follow-button">FOLLOW US <i class="fas fa-long-arrow-alt-right"></i> </a></div>
+            </div>
+        </div>
+            
+      
+    </section>
+
     <footer>
-      <div class="footer-links">
-        <i class="fab fa-facebook-f"><span>FACEBOOK</span></i>
-        <i class="fab fa-twitter"><span>TWITTER</span></i>
-        <i class="fab fa-instagram"><span>INSTAGRAM</span></i>
-        <i class="fab fa-pinterest"><span>PINTEREST</span></i>
-        <i class="fab fa-youtube"><span>YOUTUBE</span></i>
-        <i class="far fa-heart"><span>BLOGLOVIN</span></i>
-      </div>
-    </footer>
-  </body>
+        <div class="footer-links">
+          <i class="fab fa-facebook-f"><span>FACEBOOK</span></i>
+          <i class="fab fa-twitter"><span>TWITTER</span></i>
+          <i class="fab fa-instagram"><span>INSTAGRAM</span></i>
+          <i class="fab fa-pinterest"><span>PINTEREST</span></i>
+          <i class="fab fa-youtube"><span>YOUTUBE</span></i>
+          <i class="far fa-heart"><span>BLOGLOVIN</span></i>
+        </div>
+      </footer>
+
+</main>
+</body>
 </html>
